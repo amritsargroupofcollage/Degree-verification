@@ -1,0 +1,200 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Degree Verification</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }body {
+  background: linear-gradient(135deg, #0f172a, #111827);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  color: white;
+}
+
+.container {
+  width: 100%;
+  max-width: 900px;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+}
+
+.header {
+  background: linear-gradient(90deg, #059669, #0ea5e9);
+  padding: 28px;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 2rem;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+}
+
+.header p {
+  opacity: 0.95;
+  font-size: 0.95rem;
+}
+
+.content {
+  padding: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.card {
+  background: rgba(255,255,255,0.06);
+  padding: 18px;
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.label {
+  font-size: 0.8rem;
+  opacity: 0.7;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.value {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.status {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 18px;
+  border-radius: 999px;
+  background: rgba(16,185,129,0.2);
+  color: #34d399;
+  border: 1px solid rgba(52,211,153,0.4);
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.degree-preview {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.degree-preview img {
+  width: 100%;
+  border-radius: 16px;
+  border: 2px solid rgba(255,255,255,0.1);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+.download-btn {
+  text-decoration: none;
+  text-align: center;
+  background: linear-gradient(90deg, #10b981, #06b6d4);
+  color: white;
+  padding: 14px;
+  border-radius: 14px;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.download-btn:hover {
+  transform: translateY(-2px);
+  opacity: 0.95;
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  font-size: 0.85rem;
+  opacity: 0.7;
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+@media(max-width: 768px) {
+  .content {
+    grid-template-columns: 1fr;
+  }
+}
+
+  </style>
+</head>
+<body>  <div class="container"><div class="header">
+  <h1>Degree Verification Portal</h1>
+  <p>I.K. Gujral Punjab Technical University</p>
+</div>
+
+<div class="content">
+
+  <div class="details">
+
+    <div class="card">
+      <div class="label">Student Name</div>
+      <div class="value">MD. Asif Iqubal</div>
+    </div>
+
+    <div class="card">
+      <div class="label">Degree</div>
+      <div class="value">Bachelor of Pharmacy</div>
+    </div>
+
+    <div class="card">
+      <div class="label">University</div>
+      <div class="value">I.K. Gujral Punjab Technical University</div>
+    </div>
+
+    <div class="card">
+      <div class="label">College</div>
+      <div class="value">Amritsar Group of Colleges, Amritsar (Pharmacy)</div>
+    </div>
+
+    <div class="card">
+      <div class="label">Registration cum Roll Number</div>
+      <div class="value">2132629</div>
+    </div>
+
+    <div class="card">
+      <div class="label">Result Status</div>
+      <div class="value">
+        Degree Successfully Verified
+        <div class="status">VERIFIED</div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="degree-preview">
+    <img src="degree.jpg" alt="Degree Softcopy" />
+
+    <a class="download-btn" href="degree.jpg" target="_blank">
+      View Full Degree
+    </a>
+  </div>
+
+</div>
+
+<div class="footer">
+  Official Digital Verification Page
+</div>
+
+  </div></body>
+</html>
